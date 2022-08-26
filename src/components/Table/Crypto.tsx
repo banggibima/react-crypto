@@ -106,7 +106,7 @@ const TableCrypto: FC<Props> = ({ cryptos }) => {
                 ) : (
                   <tr>
                     <td className="whitespace-nowrap px-3 py-4 text-sm text-zinc-700">
-                      Empty expenses data
+                      Empty cryptos
                     </td>
                   </tr>
                 )}
