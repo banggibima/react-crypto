@@ -25,13 +25,6 @@ const CryptoList: FC = () => {
     }
   };
 
-  const currencyFormat = (currency: any) => {
-    const format = currency.toString().split('').reverse().join('');
-    const convert = format.match(/\d{1,3}/g);
-    const rupiah = 'Rp ' + convert.join('.').split('').reverse().join('');
-    console.log(rupiah);
-  };
-
   return (
     <>
       <Navbar />
@@ -39,7 +32,7 @@ const CryptoList: FC = () => {
       <main>
         <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
           <div className="px-4 sm:px-0">
-            <TableCrypto cryptos={cryptos} currencyFormat={currencyFormat} />
+            <TableCrypto cryptos={cryptos} />
           </div>
         </div>
       </main>

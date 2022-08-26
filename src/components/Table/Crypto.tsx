@@ -2,10 +2,9 @@ import { FC } from 'react';
 
 interface Props {
   [cryptos: string]: any;
-  currencyFormat: (currency: any) => void;
 }
 
-const TableCrypto: FC<Props> = ({ cryptos, currencyFormat }) => {
+const TableCrypto: FC<Props> = ({ cryptos }) => {
   return (
     <>
       <div className="md:grid md:grid-cols-6 md:gap-6">
