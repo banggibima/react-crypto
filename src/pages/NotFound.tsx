@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const NotFound: FC = () => {
   useEffect(() => {
     document.title = '404 Error';
-  }, []);
+  });
 
   return (
     <>

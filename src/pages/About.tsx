@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const About: FC = () => {
   useEffect(() => {
     document.title = 'About';
-  }, []);
+  });
 
   return (
     <>

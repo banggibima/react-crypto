@@ -7,7 +7,7 @@ import TableCrypto from '../../components/Table/Crypto';
 import Footer from '../../components/Footer';
 
 const CRYPTO_FEATURED =
-  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr&order=market_cap_desc&per_page=250&page=1&sparkline=false';
+  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr&order=market_cap_desc&per_page=1000&page=1&sparkline=false';
 
 const CryptoList: FC = () => {
   const [cryptos, setCryptos] = useState<any[]>([]);
