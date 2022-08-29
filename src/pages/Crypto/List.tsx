@@ -28,7 +28,7 @@ const CryptoList: FC = () => {
   return (
     <>
       <Navbar />
-      <Header title="Crypto List" />
+      <Header title="Cryptocurrency" />
       <main>
         <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
           <div className="px-4 sm:px-0">
