@@ -6,9 +6,6 @@ import Header from '../../components/Header';
 import TableCrypto from '../../components/Table/Crypto';
 import Footer from '../../components/Footer';
 
-const CRYPTO_FEATURED =
-  'https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr&order=market_cap_desc&per_page=1000&page=1&sparkline=false';
-
 const CryptoList: FC = () => {
   const [cryptos, setCryptos] = useState<any[]>([]);
 
@@ -19,7 +16,11 @@ const CryptoList: FC = () => {
 
   const getCryptos = async () => {
     try {
-      await axios.get(`${CRYPTO_FEATURED}`).then((res) => setCryptos(res.data));
+      await axios
+        .get(
+          `https://api.coingecko.com/api/v3/coins/markets?vs_currency=idr&order=market_cap_desc&per_page=1000&page=1&sparkline=false`
+        )
+        .then((res) => setCryptos(res.data));
     } catch (err) {
       throw err;
     }
@@ -28,10 +29,10 @@ const CryptoList: FC = () => {
   return (
     <>
       <Navbar />
-      <Header title="Cryptocurrency" />
+      <Header title="Crypto" />
       <main>
-        <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
-          <div className="px-4 sm:px-0">
+        <div className="max-w-7xl mx-auto">
+          <div className="py-4 px-4 sm:px-0 md:px-4 lg:px-4">
             <TableCrypto cryptos={cryptos} />
           </div>
         </div>

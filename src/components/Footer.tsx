@@ -6,17 +6,21 @@ const Footer: FC = () => {
   return (
     <>
       <footer>
-        <div className="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-xs">
-          Copyright &copy; {currentYear}
-          <a
-            href="https://bbima.ml"
-            className="ml-1 hover:text-sky-600"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Banggi Bima
-          </a>
-          .
+        <div className="sm:pb-8 md:pb-8 lg:pb-8 max-w-7xl mx-auto">
+          <div className="py-4 px-4 sm:px-0 md:px-4 lg:px-4">
+            <div className="text-xs text-black">
+              Copyright &copy; {currentYear}
+              <a
+                href="https://bbima.ml"
+                className="ml-1 hover:text-sky-600"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Banggi Bima
+              </a>
+              .
+            </div>
+          </div>
         </div>
       </footer>
     </>

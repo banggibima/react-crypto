@@ -8,8 +8,10 @@ const Header: FC<Props> = ({ title }) => {
   return (
     <>
       <header>
-        <div className="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold">{title}</h1>
+        <div className="max-w-7xl mx-auto">
+          <div className="py-4 px-4 sm:px-4 md:px-4 lg:px-4">
+            <h1 className="text-4xl font-bold">{title}</h1>
+          </div>
         </div>
       </header>
     </>
